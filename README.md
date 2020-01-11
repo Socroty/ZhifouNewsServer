@@ -3,7 +3,7 @@ This is the server program of ZhifouNews application.
 ## Usage
 ### Code
 1. Download the code for this program.
-2. Import the code into IDEA or other Java IDE.
+2. Import the code into [IntelliJ IDEA](https://www.jetbrains.com/idea/) or other Java IDE.
 3. Modify the `/src/ServerConstant.java` according to your configuration.
 4. Debug or Run it.
 ### Database
