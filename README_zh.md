@@ -1,7 +1,7 @@
 # 知否新闻 - 服务端
-## ![Licence:GPL](https://img.shields.io/badge/Licence-GPL-red) ![Database:MySQL](https://img.shields.io/badge/Database-MySQL-blue) ![IDE:IntelliJ IDEA](https://img.shields.io/badge/IDE-IntelliJ_IDEA-blueviolet)
-该项目是ZhifouNews系统的服务端程序。  
-你还可以修改代码和数据库以实现更多功能，并将其应用于自己的应用程序。
+#### [English](https://github.com/Socroty/ZhifouNewsServer/blob/master/README.md) | 简体中文 | Espanol | 日本語
+![Licence:GPL](https://img.shields.io/badge/Licence-GPL-red) ![Database:MySQL](https://img.shields.io/badge/Database-MySQL-blue) ![IDE:IntelliJ IDEA](https://img.shields.io/badge/IDE-IntelliJ_IDEA-blueviolet)
+#### 该项目是ZhifouNews系统的服务端程序，你也可以修改代码和数据库以实现更多功能，并将其应用于自己的应用程序。
 ## 使用
 ### 代码
 1. 下载此项目的代码到你的计算机；
