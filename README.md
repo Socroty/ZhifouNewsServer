@@ -1,6 +1,6 @@
 # ZhifouNews - Server
-English | [简体中文](https://github.com/Socroty/ZhifouNewsServer/blob/master/README_zh.md) | Espanol | 日本語
-## ![Licence:GPL](https://img.shields.io/badge/Licence-GPL-red) ![Database:MySQL](https://img.shields.io/badge/Database-MySQL-blue) ![IDE:IntelliJ IDEA](https://img.shields.io/badge/IDE-IntelliJ_IDEA-blueviolet)
+#### English | [简体中文](https://github.com/Socroty/ZhifouNewsServer/blob/master/README_zh.md) | Espanol | 日本語
+![Licence:GPL](https://img.shields.io/badge/Licence-GPL-red) ![Database:MySQL](https://img.shields.io/badge/Database-MySQL-blue) ![IDE:IntelliJ IDEA](https://img.shields.io/badge/IDE-IntelliJ_IDEA-blueviolet)
 #### This project is a server-side program for ZhifouNews systems. You can also modify the code and database to implement more functions and apply it to your own applications.
 ## Usage
 ### Code
