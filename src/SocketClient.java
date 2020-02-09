@@ -19,7 +19,7 @@ public class SocketClient {
 
     private static String Client(String data) throws IOException {
         //Socket连接某个服务器端，host表示服务器的Ip地址 port表示端口号
-        Socket s=new Socket("127.0.0.1", 1912);
+        Socket s=new Socket("192.168.1.20", 2233);
 
         PrintWriter pw=new PrintWriter(s.getOutputStream(),true);
         pw.println(data);

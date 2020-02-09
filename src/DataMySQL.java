@@ -79,28 +79,24 @@ class DataMySQL {
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
             ResultSet rs = preparedStatement.executeQuery();
             List<String> list_id = new ArrayList<>();
-            List<String> list_title = new ArrayList<>();
-            List<String> list_content = new ArrayList<>();
-            List<String> list_background = new ArrayList<>();
+            List<String> list_data_id = new ArrayList<>();
+            List<String> list_data_title = new ArrayList<>();
             StringBuilder result_id = new StringBuilder();
-            StringBuilder result_title = new StringBuilder();
-            StringBuilder result_content = new StringBuilder();
-            StringBuilder result_background = new StringBuilder();
+            StringBuilder result_data_id = new StringBuilder();
+            StringBuilder result_data_title = new StringBuilder();
 
             while (rs.next()) {
                 list_id.add(rs.getString("headline_id"));
-                list_title.add(rs.getString("headline_title"));
-                list_content.add(rs.getString("headline_content"));
-                list_background.add(rs.getString("headline_background"));
+                list_data_id.add(rs.getString("headline_data_id"));
+                list_data_title.add(rs.getString("headline_title"));
             }
 
             for (int i = 0; i<6; i++){
-                result_title.append("/%/").append(list_title.get(i));
-                result_content.append("/%/").append(list_content.get(i));
-                result_background.append("/%/").append(list_background.get(i));
+                result_data_id.append("/%/").append(list_data_id.get(i));
                 result_id.append("/%/").append(list_id.get(i));
+                result_data_title.append("/%/").append(list_data_title.get(i));
             }
-            result = result_title + "/@/" + result_content + "/@/" + result_background + "/@/" + result_id;
+            result = result_data_id + "/@/" + result_id + "/@/" + result_data_title;
             rs.close();
             preparedStatement.close();
         } catch (Exception e) {
@@ -133,8 +129,6 @@ class DataMySQL {
                 result_title.append("/%/").append(list_title.get(i));
                 result_id.append("/%/").append(list_id.get(i));
                 result_image_url.append("/%/").append(list_image_url.get(i));
-                //result_title = result_title + "/%/" + list_title.get(i);
-                //result_id = result_id + "/%/" + list_id.get(i);
             }
             result = result_title + "/@/" + result_id + "/@/" + result_image_url;
             rs.close();

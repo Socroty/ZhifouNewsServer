@@ -51,9 +51,17 @@ class DataInfoControl{
         String[] news_data = result_data.split("/%/");
         String data_id = news_data[0];
         String data_author = news_data[3];
-        DataMySQL.SQLOperation("insert_history_info",Integer.parseInt(info[0]),info[1]);
-        String result_follow = DataMySQL.SQLOperation("fetch_follow_info", 0, data_author + "/@/" + info[1]);
-        String result_favorite = DataMySQL.SQLOperation("fetch_favorite_info", 0, data_id + "/@/" + info[1]);
+        String result_follow;
+        String result_favorite;
+        if (!info[1].equals("null")){
+            DataMySQL.SQLOperation("insert_history_info",Integer.parseInt(info[0]),info[1]);
+            result_follow = DataMySQL.SQLOperation("fetch_follow_info", 0, data_author + "/@/" + info[1]);
+            result_favorite = DataMySQL.SQLOperation("fetch_favorite_info", 0, data_id + "/@/" + info[1]);
+        }else {
+            result_follow = "null";
+            result_favorite = "null";
+        }
+
         result = result_data + "/%/" + result_follow + "/%/" + result_favorite;
 
         return result;
