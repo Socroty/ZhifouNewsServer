@@ -6,7 +6,6 @@ class UserInfoControl {
         String user_name = info[0];
         String user_password = info[1];
         String fetch_result = UserMySQL.SQLOperation("fetch_sign_up", user_name, null, null);
-
         switch (fetch_result) {
             case "fetch.exist":
                 result = "sign.up.exist";
@@ -61,7 +60,7 @@ class UserInfoControl {
         return result;
     }
 
-    static String userRandomVerify(String data) {
+    static String deviceRandomVerify(String data) {
         String result;
         String[] info = data.split("/&/");
         String user_name = info[0];

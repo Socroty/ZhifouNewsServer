@@ -47,8 +47,10 @@ class UserMySQL {
     }
 
     private static String fetch_sign_up(String data_name) {
+
         String result = null;
         String user_id = null;
+
         try {
             String sql = "select * from user_info where user_name = ?";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
@@ -71,7 +73,9 @@ class UserMySQL {
     }
 
     private static String insert_sign_up(String data_name, String data_password) {
+
         String result;
+
         try {
             String sql = "insert into user_info (user_name,user_password,user_description,user_sign_up_date) values (?,?,?,NOW())";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
